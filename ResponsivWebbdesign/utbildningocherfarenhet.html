@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="">
+  <title>Beetlejuice</title>
+  <meta name="description" content="Information about Beetlejuice and his beautiful career">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav aria-label="Huvudmeny">Information</nav>
+  </header>
+ <!-- Flera sematiska taggar för strukturering-->  
+
+ 
+  <article class="block-card block-card--modifier">
+    <h3 class="block-card__title">Utbildning och erfarenhet</h3>
+    <img class="block-card__image" src="images/bild.jpg" alt="Beetlejuice with a slice of pizza (jpg)"
+         width="400" height="300">
+    <p class="block-card__text">Text</p>
+  </article>
+  
+<!-- JS: beskriv här vad som ska hända när man använder elementet -->
+<button type="button" class="block__action"
+data-js-action="verb"
+data-info="värde">
+Click here to know more
+</button>
+
+<p class="block__result" data-js-target="substantiv" aria-live="polite"></p>
+
+
+</body>
+<footer>Powered by Aron Alatalo and Emil Blom</footer>
+</html>

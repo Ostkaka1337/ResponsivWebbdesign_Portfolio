@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="">
+  <title>Beetlejuice</title>
+  <meta name="description" content="Information about Beetlejuice and his beautiful career">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav aria-label="Huvudmeny">Information</nav>
+  </header>
+ <!-- Flera sematiska taggar för strukturering-->  
+
+ 
+  <article class="main-card main-card--modifier">
+    <h3 class="main-card__title">About me: Beetlejuice</h3>
+    <img class="main-card__image" src="images/bild.jpg" alt="Beetlejuice with a slice of pizza (jpg)"
+         width="400" height="300">
+    <p class="main-card__text">Text</p>
+    <a class="main-card__link" href="kompetenser.html">Mina Kompetenser</a>
+    <a class="main-card__link" href="projekt.html">Mina Projekt</a>
+    <a class="main-card__link" href="kontakt.html">Kontakta mig</a>
+    <a class="main-card__link" href="utbildningocherfarenhet.html">Min utbildning och mina erfarenheter</a>
+  </article>
+  
+<!-- JS: beskriv här vad som ska hända när man använder elementet -->
+<button type="button" class="block__action"
+data-js-action="verb"
+data-info="värde">
+Click here to know more
+</button>
+
+<p class="block__result" data-js-target="substantiv" aria-live="polite"></p>
+
+<!---<form class="block-element" action="url till php" method="post">
+    <!--- lämplig input fält lables etc --
+  
+    <button class="block__element" type="submit">Skicka</button>
+  </form>
+  
+  <?php
+  // Läs datan. Nyckeln i $_POST är fältets name-attribut.
+  $name   = $_POST["name"];
+  ?>
+  <main>
+    <h1 class="block__element">Tack!</h1>
+    <p class="block__element">Hej <?php echo htmlspecialchars($name); ?>, du valde <?php echo htmlspecialchars($choice); ?>.</p>
+  </main> -->
+</body>
+<footer>Powered by Aron Alatalo and Emil Blom</footer>
+</html>
