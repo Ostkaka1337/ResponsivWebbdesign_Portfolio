@@ -2,36 +2,47 @@
 <html lang="sv">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="">
-  <title>Beetlejuice</title>
-  <meta name="description" content="Information about Beetlejuice and his beautiful career">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beetlejuice – Officiell portfolio &amp; karriär</title>
+  <meta name="description" content="Lär känna Beetlejuice, utforska hans kompetenser, projekt, utbildning och erfarenheter genom en framgångsrik karriär.">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js" defer></script>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+
   <header>
-    <nav aria-label="Huvudmeny">Information</nav>
+    <nav class="nav-card" aria-label="Huvudmeny">
+      <p class="nav-card__text" id="nav-heading">Navigation</p>
+      <ul class="nav-card__list" aria-labelledby="nav-heading">
+        <li class="nav-card__item"><a class="nav-card__link" href="index.html">Startsida</a></li>
+        <li class="nav-card__item"><a class="nav-card__link" href="kompetenser.html" aria-current="page">Mina Kompetenser</a></li>
+        <li class="nav-card__item"><a class="nav-card__link" href="projekt.html">Mina Projekt</a></li>
+        <li class="nav-card__item"><a class="nav-card__link" href="kontakt.html">Kontakta mig</a></li>
+        <li class="nav-card__item"><a class="nav-card__link" href="utbildningocherfarenhet.html">Min utbildning och mina erfarenheter</a></li>
+        <li class="nav-card__item"><a class="nav-card__link" href="referenser.html">Mina referenser</a></li>
+      </ul>
+    </nav>
   </header>
- <!-- Flera sematiska taggar för strukturering-->  
 
- 
-  <article class="block-card block-card--modifier">
-    <h3 class="block-card__title">Kompetenser</h3>
-    <img class="block-card__image" src="images/bild.jpg" alt="Beetlejuice with a slice of pizza (jpg)"
-         width="400" height="300">
-    <p class="block-card__text">Text</p>
-  </article>
-  
-<!-- JS: beskriv här vad som ska hända när man använder elementet -->
-<button type="button" class="block__action"
-data-js-action="verb"
-data-info="värde">
-Click here to know more
-</button>
+  <main id="main-content">
+    <section class="competence-card" aria-labelledby="page-title">
+      <h1 id="page-title" class="competence-card__title">Mina kompetenser!</h1>
+      <ul class="competence-card__list">
+        <li class="competence-card__item">
+          <h2>Kompetens 1</h2>
+          <p>Berätta</p>
+        </li>
+        <li class="competence-card__item">
+          <h2>Kompetens 2</h2>
+          <p>Berätta</p>
+        </li>
+      </ul>
+    </section>
+  </main>
 
-<p class="block__result" data-js-target="substantiv" aria-live="polite"></p>
-
-
+  <footer>
+    <p>Powered by Aron Alatalo and Emil Blom</p>
+  </footer>
 </body>
-<footer>Powered by Aron Alatalo and Emil Blom</footer>
 </html>

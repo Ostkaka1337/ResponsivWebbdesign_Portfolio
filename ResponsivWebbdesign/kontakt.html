@@ -2,36 +2,58 @@
 <html lang="sv">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="">
-  <title>Beetlejuice</title>
-  <meta name="description" content="Information about Beetlejuice and his beautiful career">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakta mig – Beetlejuice</title>
+  <meta name="description" content="Kontakta Beetlejuice för bokningar, bio-exorcism och samarbeten.">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js" defer></script>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+
   <header>
-    <nav aria-label="Huvudmeny">Information</nav>
+    <nav class="nav-card" aria-label="Huvudmeny">
+      <p class="nav-card__text" id="nav-heading">Navigation</p>
+      <ul class="nav-card__list" aria-labelledby="nav-heading">
+        <li class="nav-card__item"><a class="nav-card__link" href="index.html">Startsida</a></li>
+        <li class="nav-card__item"><a class="nav-card__link" href="kompetenser.html">Mina Kompetenser</a></li>
+        <li class="nav-card__item"><a class="nav-card__link" href="projekt.html">Mina Projekt</a></li>
+        <li class="nav-card__item"><a class="nav-card__link" href="kontakt.html" aria-current="page">Kontakta mig</a></li>
+        <li class="nav-card__item"><a class="nav-card__link" href="utbildningocherfarenhet.html">Min utbildning och mina erfarenheter</a></li>
+        <li class="nav-card__item"><a class="nav-card__link" href="referenser.html">Mina referenser</a></li>
+      </ul>
+    </nav>
   </header>
- <!-- Flera sematiska taggar för strukturering-->  
 
- 
-  <article class="block-card block-card--modifier">
-    <h3 class="block-card__title">Kontakt</h3>
-    <img class="block-card__image" src="images/bild.jpg" alt="Beetlejuice with a slice of pizza (jpg)"
-         width="400" height="300">
-    <p class="block-card__text">Text</p>
-  </article>
-  
-<!-- JS: beskriv här vad som ska hända när man använder elementet -->
-<button type="button" class="block__action"
-data-js-action="verb"
-data-info="värde">
-Click here to know more
-</button>
+  <main id="main-content" class="main-content">
+    <section class="contact-section" aria-labelledby="page-title">
+      <h1 id="page-title" class="contact-section__title">Kontakta Beetlejuice</h1>
 
-<p class="block__result" data-js-target="substantiv" aria-live="polite"></p>
+      <!-- JS: Kopierar e-postadressen vid klick -->
+      <button type="button" class="contact-section__btn"
+              data-js-action="copy-email"
+              data-email="beetlejuice@afterlife.se">
+        Kopiera e-post
+      </button>
+      <p class="contact-section__status" data-js-target="copy-status" aria-live="polite"></p>
 
+      <form class="contact-form" action="tack.php" method="post">
+        <label class="contact-form__label" for="name">Namn:</label>
+        <input class="contact-form__input" type="text" id="name" name="name" required>
 
+        <label class="contact-form__label" for="email">E-post:</label>
+        <input class="contact-form__input" type="email" id="email" name="email" required>
+
+        <label class="contact-form__label" for="message">Meddelande:</label>
+        <textarea class="contact-form__textarea" id="message" name="message" rows="4" required></textarea>
+
+        <button class="contact-form__submit" type="submit">Skicka</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="site-footer__text">Powered by Aron Alatalo and Emil Blom</p>
+  </footer>
 </body>
-<footer>Powered by Aron Alatalo and Emil Blom</footer>
 </html>
