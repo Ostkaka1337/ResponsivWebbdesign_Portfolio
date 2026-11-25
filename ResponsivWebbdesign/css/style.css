@@ -1,0 +1,31 @@
+/* Skip link */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+}
+.skip-link:focus {
+    left: 10px;
+    top: 10px;
+    background-color: #ffffff;
+    color: #1565c0;
+    padding: 0.5rem 0.75rem;
+    outline: 3px solid #1565c0;
+    z-index: 1000;
+}
+
+/* Navigation */
+.nav-card__link {
+    display: inline-block;
+    padding: 5px 7px;
+    margin-bottom: 3px;
+}
+
+/* Referenser */
+.reference-card__item {
+    margin-bottom: 1.5rem;
+  }
+
+/* Kontakt */
+.contact-form {
+    display: flex; flex-direction: column; align-items: flex-start; gap: 0.75rem;
+}
