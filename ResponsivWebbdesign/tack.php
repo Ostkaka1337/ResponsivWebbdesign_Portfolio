@@ -1,6 +1,6 @@
 <?php
 
-// Varje fält
+
 $name = htmlspecialchars($_POST['name'] ?? '', ENT_QUOTES, 'UTF-8');
 $email = htmlspecialchars($_POST['email'] ?? '', ENT_QUOTES, 'UTF-8');
 $selection = htmlspecialchars($_POST['selection'] ?? '', ENT_QUOTES, 'UTF-8');
